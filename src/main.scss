@@ -1,0 +1,25 @@
+@charset 'UTF-8';
+
+/*-------------------------------------------------------*\
+    #media query mixin
+\*-------------------------------------------------------*/
+
+@mixin respond-to($point) {
+
+  @media (min-width: $point) {
+
+    @content;
+
+  }
+
+}
+
+@import
+  'scss/utils/variables/colors',
+  'scss/utils/variables/fonts';
+
+@import
+  'scss/normalize.scss';
+
+@import
+  'scss/base.scss';
